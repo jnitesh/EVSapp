@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Button button = new Button(this);
         button.setText("Hello World");
-        button.setText("Bye World");
+        button.setText("Bye");
     }
 
 
