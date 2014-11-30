@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nitesh.evsapp" >
-    
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -16,9 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".News"
-                  android:label="@string/app_name"
-                android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".News"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".UploadArticles"
+            android:label="@string/app_name"
+            android:parentActivityName=".News" >
+        </activity>
+        <activity
+            android:name=".EcoTips"
+            android:label="Ecotips"
+            android:parentActivityName=".MainActivity" >
         </activity>
     </application>
 

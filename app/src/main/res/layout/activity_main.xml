@@ -1,69 +1,48 @@
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:tools="http://schemas.android.com/tools"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:orientation="vertical"
-                  android:background="@drawable/mainactivity"
-                  tools:context=".MainActivity">
+    <Button
+        android:id="@+id/news"
+        android:onClick="newsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C62828"
+        android:layout_weight="2"
+        android:gravity="center"
 
-            <TextView
-                android:id="@+id/news"
-                android:text="@string/news_activity"
-                android:textColor="#fff"
-                android:textSize="50sp"
-                android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            <TextView
-
-                android:layout_weight="19"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:id="@+id/sample_news" />
-
-            <Button
-                android:layout_weight="1"
-                android:onClick="newsActivity"
-                android:textColor="#ffe25c17"
-                android:textSize="18sp"
-                android:text="@string/more"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/more_news"/>
-            <TextView
-                android:id="@+id/tips"
-                android:text="@string/news_activity"
-                android:textColor="#fff"
-                android:textSize="50sp"
-                android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            <TextView
-                android:layout_weight="19"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:id="@+id/sample_tips" />
-
-            <Button
-                android:layout_weight="1"
-                android:onClick="newsActivity"
-                android:textColor="#ffe25c17"
-                android:textSize="18sp"
-                android:text="@string/more"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/more_tips"/>
-
-    </LinearLayout>
+        android:text="@string/news_activity"
+        android:textColor="#fff"
+        android:textSize="57sp" />
 
 
-</ScrollView>
+    <Button
+        android:id="@+id/tips"
+        android:onClick="ecoTipsActivity"
+        android:layout_width="match_parent"
+        android:background="#ff484848"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/tips"
+        android:textColor="#fff"
+        android:textSize="57sp" />
+    <Button
+        android:id="@+id/gmail"
+        android:layout_width="match_parent"
+        android:onClick="loginGmail"
+        android:textSize="35sp"
+        android:textColor="@android:color/white"
+        android:layout_weight="3"
+        android:background="#ff29d33e"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
+
+

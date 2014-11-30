@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        card_view:cardBackgroundColor="#0000"
+        card_view:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:background="#ff008d9f"
+                android:padding="5dp"
+                android:id="@+id/news_header"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        <TextView
+                android:paddingLeft="8dp"
+                android:background="#ff00b3ca"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/news_content"
+                android:textSize="19sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/news_time"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
